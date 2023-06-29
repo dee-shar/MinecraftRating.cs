@@ -1,5 +1,5 @@
 # minecraft_rating.sh
-Web-API for minecraftrating.ru is the most popular monitoring of Minecraft servers in Runet
+Web-API for [minecraftrating.ru](https://minecraftrating.ru) is the most popular monitoring of Minecraft servers in Runet
 
 ## Example
 ```bash
