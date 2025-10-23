@@ -7,7 +7,7 @@ namespace MinecraftRatingApi
 {
 	public class MinecraftRatingClient {
 		private readonly HttpClient _client;
-		private readonly string _baseUrl = "https://minecraftrating.ru";
+		private readonly string _baseUrl = "https://minecraftrating.ru/api";
 		public MinecraftRatingClient() {
 			_client = new HttpClient();
 			_client.DefaultRequestHeaders.Add("User-Agent",
@@ -16,17 +16,17 @@ namespace MinecraftRatingApi
 
 		public async Task<string> RegisterAccount(string login, string email, string password) {
 			var data = $"login={login}&email={email}&password={password}";
-			return await PostAsync("/api/register/", data);
+			return await PostAsync("/register/", data);
 		}
 
 		public async Task<string> Login(string username, string password) {
 			var data = $"login_name={username}&login_password={password}&login=submit";
-			return await PostAsync("/api/register/", data);
+			return await PostAsync("/register/", data);
 		}
 
 		public async Task<string> AddServer(string serverAddress) {
 			var data = $"ip={serverAddress}";
-			return await PostAsync("/api/add-server/", data);
+			return await PostAsync("/add-server/", data);
 		}
 
 		private async Task<string> PostAsync(string endpoint, string formData) {
