@@ -1,11 +1,11 @@
-# minecraft_rating.sh
+# minecraft_rating.cs
 Web-API for [minecraftrating.ru](https://minecraftrating.ru) is the most popular monitoring of Minecraft servers in Runet
 
 ## Example
 ```cs
 using System;
 using System.Threading.Tasks;
-using MinecraftRatingAPI;
+using MinecraftRatingApi;
 
 namespace Application {
 	internal class Program {
