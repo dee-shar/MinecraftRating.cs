@@ -1,5 +1,5 @@
 # minecraft_rating.cs
-Web-API for [minecraftrating.ru](https://minecraftrating.ru) is the most popular monitoring of Minecraft servers in Runet
+Web-API for [minecraftrating.ru](https://minecraftrating.ru) an website that serves as popular monitoring service of Minecraft servers in Russia.
 
 ## Example
 ```cs
