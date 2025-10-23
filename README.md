@@ -1,5 +1,5 @@
 # minecraft_rating.cs
-Web-API for [minecraftrating.ru](https://minecraftrating.ru) an website that serves as popular monitoring service of Minecraft servers in Russia.
+Web-API for [minecraftrating.ru](https://minecraftrating.ru) an website that serves as popular monitoring service for Minecraft servers in Russia.
 
 ## Example
 ```cs
@@ -11,7 +11,7 @@ namespace Application {
 	internal class Program {
 		static async Task Main() {
 			var api = new MinecraftRatingClient();
-			string loginResponse = await api.Login("testuser", "password123");
+			string loginResponse = await api.Login("username", "password");
 			Console.WriteLine(loginResponse);
 		}
 	}
