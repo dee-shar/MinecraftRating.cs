@@ -1,4 +1,4 @@
-# minecraft_rating.cs
+# MinecraftRating.cs
 Web-API for [minecraftrating.ru](https://minecraftrating.ru) an website that serves as popular monitoring service for Minecraft servers in Russia.
 
 ## Example
