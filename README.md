@@ -4,16 +4,16 @@ Web-API for [minecraftrating.ru](https://minecraftrating.ru) an website that ser
 ## Example
 ```cs
 using System;
+using MinecraftRating;
 using System.Threading.Tasks;
-using MinecraftRatingApi;
 
 namespace Application {
-	internal class Program {
-		static async Task Main() {
-			var api = new MinecraftRatingClient();
-			string loginResponse = await api.Login("username", "password");
-			Console.WriteLine(loginResponse);
-		}
-	}
+    internal class Program {
+        static async Task Main() {
+            var api = new MinecraftRatingApi();
+            string loginResponse = await api.Login("username", "password");
+            Console.WriteLine(loginResponse);
+        }
+    }
 }
 ```
