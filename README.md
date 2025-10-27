@@ -3,7 +3,6 @@ Web-API for [minecraftrating.ru](https://minecraftrating.ru) an website that ser
 
 ## Example
 ```cs
-using System;
 using MinecraftRating;
 
 namespace Application
