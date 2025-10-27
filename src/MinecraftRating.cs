@@ -34,8 +34,8 @@ namespace MinecraftRating
 
         private async Task<string> PostAsync(string endpoint, string formData)
         {
-            var content = new StringContent(formData, Encoding.UTF8, "application/x-www-form-urlencoded");
-            var response = await httpClient.PostAsync($"{apiUrl}{endpoint}", content);
+            var data = new StringContent(formData, Encoding.UTF8, "application/x-www-form-urlencoded");
+            var response = await httpClient.PostAsync($"{apiUrl}{endpoint}", data);
             return await response.Content.ReadAsStringAsync();
         }
     }
