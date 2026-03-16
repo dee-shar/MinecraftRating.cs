@@ -7,6 +7,7 @@ namespace MinecraftRating
     {
         private readonly HttpClient httpClient;
         private readonly string apiUrl = "https://minecraftrating.ru/api";
+        
         public MinecraftRatingApi()
         {
             httpClient = new HttpClient();
